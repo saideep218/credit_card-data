@@ -1,3 +1,30 @@
+create database if not exists credit_card_data;
+
+create table if not exists credit (
+Ind_ID int not null primary key,
+GENDER char(1) not null,
+Car_Owner char(1) not null,
+Property_Owner char(1) not null,
+CHILDREN int not null,	
+Annual_income int not null,
+Type_Income	varchar(30) not null,
+EDUCATION varchar(50) not null,
+Marital_status varchar(25) not null,
+Housing_type varchar(30) not null,
+Birthday_count int not null,
+Employed_days int not null,
+Mobile_phone int not null,
+Type_Occupation varchar(30) not null,
+Family_Members int not null);
+
+select * from credit;
+
+create table if not exists test_data(
+Ind_ID int not null primary key,
+Approval int not null);
+
+select * from test_data;
+
 select * from credit;
 
 -- rename the column
